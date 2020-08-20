@@ -1,0 +1,528 @@
+@charset "UTF-8";
+/* リセットCSS */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+vertical-align:baseline;
+background:transparent;
+}
+
+body {
+/* プロジェクトによって変動 */
+/* min-width: 1000px; */
+color: #000;
+line-height: 1;
+font-weight: 400;
+font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+font-family: '游ゴシック体';
+width: 100%;
+/* font-smoothing: antialiased; */
+font-variant-numeric: tabular-nums;
+/* safari hover対策 */
+-webkit-font-smoothing: antialiased;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+ul, ol {
+list-style:none;
+}
+
+blockquote, q {
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+
+a {
+margin:0;
+padding:0;
+vertical-align:baseline;
+text-decoration: none;
+color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+background-color:#ff9;
+color:#000;
+font-style:italic;
+font-weight:bold;
+}
+
+del {
+text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #cccccc;
+margin:1em 0;
+padding:0;
+}
+
+input, select {
+vertical-align:middle;
+}
+
+img {
+vertical-align: bottom;
+line-height: 1.0;
+}
+
+button {
+line-height: 1.0;
+background-color: transparent;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 0;
+appearance: none;
+}
+.flex {
+    display: flex;
+}
+#why p{
+    /* font-family: 'ヒラギノ明朝 ProN'; */
+    font-family: '游ゴシック体';
+    /* font-family: 'メイリオ'; */
+}
+#object {
+    z-index: 100;
+    position: absolute;
+    /* top: 300px; */
+    /* left: 15px; */
+    writing-mode: vertical-lr;
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+    padding-left: 20px;
+    /* background-color: #999; */
+    /* text-align: center; */
+    /* background: #999; */
+}
+#object p {
+    position: absolute;
+    padding-left: 10px;
+    font-family: 'American Typewriter';
+    font-size: 18px;
+}
+.object-inner {
+    padding: 10px 0 0 10px;
+    z-index: 120;
+    position: fixed;
+    writing-mode: initial;
+    left: 0;
+    top: 0;
+    display: none;
+    /* background: #555; */
+    width: 200px;
+    font-family: 'American Typewriter';
+    font-size: 18px;
+}
+.object-inner ul li {
+    padding-bottom: 30px;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+.menu {
+    position: absolute;
+    writing-mode: vertical-lr;
+    top: 0;
+    background-color: #999;
+    width: 30px;
+    padding-left: 8px;
+    padding-right: 5px;
+    font-size: 18px;
+}
+.bar {
+    writing-mode: initial;
+    position: absolute;
+    top: 65px;
+    left: 7px;
+    /* left: 11px; */
+}
+.menu-bar{
+    writing-mode: initial;
+    position: relative;
+    top: 10px;
+    /* left: -5px; */
+}
+.inner {
+    margin: 0 80px;
+}
+#main-img {
+    width: 100%;
+    height: 395px;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgb(161, 163, 159);
+}
+.midashi {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+#why .red-line {
+    /* position: absolute; */
+    /* display: inline-block; */
+    position: relative;
+    background-color: rgba(255, 30, 5,0.7);
+    width: 330px;
+    height: 20px;
+    left: -10px;
+    top: -45px;
+    z-index: 0;
+}
+#why {
+    width: 100%;
+    height: 355px;
+    /* background-color: rgb(219, 217, 214); */
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+h1 {
+    font-family: 'American Typewriter';
+    display: inline-block;
+    /* font-family: 'Avenir Next'; */
+}
+.sub-title {
+    position: relative;
+    /* font-family: '丸明オールド'; */
+    font-family: '游ゴシック体';
+    z-index: 1;
+}
+#why h1 {
+    display: inline-block;
+    /* margin-top: 10px; */
+    font-size: 40px;
+    color: #333333;
+    /* font-family: 'American Typewriter'; */
+}
+#why .sub-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333333;
+}
+#why p {
+    margin-top: 30px;
+    line-height: 40px;
+    color: #333333;
+    font-size: 18px;
+    width: 740px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 40px auto 0 auto;
+    font-weight: bolder;
+    top: -30px;
+    position: relative;
+}
+#GoodPoint {
+    width: 100%;
+    height: 1120px;
+    background-color: rgb(219, 217, 214);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+#GoodPoint h1 {
+    position: relative;
+    margin-top: 10px;
+    font-size: 40px;
+    color: #333333;
+    z-index: 1;
+}
+#GoodPoint .sub-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333333;
+}
+#GoodPoint .red-line {
+    /* position: absolute; */
+    /* display: inline-block; */
+    position: relative;
+    background-color: rgba(255, 30, 5,0.7);
+    width: 300px;
+    height: 20px;
+    left: -10px;
+    top: -45px;
+    z-index: 0;
+}
+#GoodPoint ul {
+    position: relative;
+    margin-top: 40px;
+    top: -30px;
+}
+#GoodPoint ul li {
+    margin-bottom: 50px;
+    color: #333333;
+}
+.good {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+}
+#GoodPoint ul li p {
+    margin-top: 15px;
+    line-height: 30px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: bolder;
+}
+#Hobby {
+    width: 100%;
+    height: 1930px;
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    padding-top: 80px;
+    
+}
+#Hobby h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #333333;
+}
+#Hobby .sub-title {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #333333;
+}
+#Hobby .red-line {
+    /* position: absolute; */
+    /* display: inline-block; */
+    position: relative;
+    background-color: rgba(255, 30, 5,0.7);
+    width: 200px;
+    height: 20px;
+    left: -10px;
+    top: -85px;
+    z-index: 0;
+}
+.hobby-text{
+    width: 500px;
+    height: 300px;
+    color: #333333;
+}
+.hobby-items {
+    /* display: flex; */
+    width: 939px;
+    height: 300px;
+    position: relative;
+    z-index: 0;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    margin: 0 auto 150px;
+}
+.hobby-items img {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    z-index: 1;
+    -webkit-box-shadow: 4px 4px 20px #00000029;
+    box-shadow: 4px 4px 20px #00000029;
+}
+.hobby-text {
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333333;
+    border: solid 2px #000;
+}
+.hobby-img1,.hobby-img3 {
+    top: 0;
+    left: 0;
+}
+.hobby-img2,.hobby-img4 {
+    top: 0;
+    right: 0;
+} 
+.hobby-items .hobby-img2 {
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/IMG_2527.jpg');
+}
+.hobby-items .hobby-img4 {
+    width: 300px;
+    height: 400px;
+}
+.hobby-text1 {
+    background-image: url('../img/ハンドドリップ.png');
+    border: solid 2px #000;
+}
+.hobby-text2 {
+    background-image: url('../img/足あと.png');
+}
+.hobby-text3 {
+    background-image: url('../img/喫茶店めぐり.png');
+}
+.hobby-text4 {
+    background-image: url('../img/温泉.png');
+}
+.hobby-text1,.hobby-text3 {
+    right: 0;
+    bottom: 0;
+    margin-top: 50px;
+}
+.hobby-text1 p,.hobby-text3 p {
+    margin-left: 350px;
+    width: 400px;
+    margin-top: 30px;
+}
+.hobby-text2,.hobby-text4 {
+    left: 0;
+    bottom: 0;
+    margin-top: 50px;
+    width: 700px;
+}
+.hobby-text2 p,.hobby-text4 p {
+    margin-left: 50px;
+    margin-top: 30px;
+    /* margin: auto 0 auto 50px; */
+    width: 400px;
+}
+.hobby-midashi {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.text {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.tate {
+    width: 800px;
+}
+#study {
+    width: 100%;
+    height: 1700px;
+    
+    background-color: rgb(219, 217, 214);
+    text-align: center;
+    padding-top: 80px;
+    
+}
+#study h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #333333;
+}
+#study .sub-title {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #333333;
+}
+#study .red-line {
+    /* position: absolute; */
+    /* display: inline-block; */
+    position: relative;
+    background-color: rgba(255, 30, 5,0.7);
+    width: 250px;
+    height: 20px;
+    left: -10px;
+    top: -85px;
+    z-index: 0;
+}
+#study .how {
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    top: -30px;
+}
+#study .purpose {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.how p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+.psd {
+    width: 260px;
+    height: 350px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+.screen {
+    width: 360px;
+    height: 260px;
+}
+.how-items {
+    margin-top: 10px;
+}
+.how-item {
+    margin-top: 25px;
+    justify-content: center;
+}
+.design {
+    margin-left: 50px;
+}
+.design p {
+    font-size: 12px;
+}
+.coding p {
+    font-size: 12px;
+}
+footer {
+    background-color: #999;
+    text-align: center;
+    height: 30px;
+}
+small {
+    display: inline-block;
+    margin-top: 10px;
+}
