@@ -498,7 +498,7 @@ h1 {
     margin-bottom: 25px;
     margin-right: 15px;
 }
-psd1 {
+/* psd1 {
     background-image: url("../img/バナー比較1.png");
 }
 psd2 {
@@ -506,7 +506,7 @@ psd2 {
 }
 psd3 {
     background-image: url("../img/バナー比較3.png");
-}
+} */
 .screen {
     width: 360px;
     height: 260px;
@@ -535,4 +535,20 @@ footer {
 small {
     display: inline-block;
     margin-top: 10px;
+}
+@media screen and (max-width: 1106px){
+    .inner {
+        margin: 0;
+    }
+    #object {
+        display: none;
+    }
+}
+@media screen and (max-width: 999px){
+    #study {
+        height: 100%;
+    }
+    /* .inner {
+        margin: 0;
+    } */
 }
