@@ -134,6 +134,26 @@
                         <br>老後の夢は喫茶店を開き、お客さんに珈琲で感動を与えることです。
                     </p>
                 </div>
+                <!-- <script>
+                    var mediaQuery = matchMedia('(max-width: 999px)');
+                    handle(mediaQuery);
+                    mediaQuery.addListener(handle);
+                    function handle(mq) {
+                        if (mq.matches) {
+                        // ウィンドウサイズが999px以下のとき
+                        var hobbyWidth=$("#Hobby").width();
+                        $(".hobby-items").css('width',hobbyWidth);
+                        $(".hobby-text1").css('margin-right','30px');
+                        $(".hobby-text1").css('width',hobbyWidth/1.2);
+                        console.log(hobbyWidth);
+                        } else {
+                              // それ以外
+                              $(".hobby-text1").css('width','680px');
+                              $(".hobby-text1").css('margin-right',0);
+                              $(".hobby-items").css('width','939px');
+                        }
+                    }
+                </script> -->
                 
             </div>
             <div class="hobby-items tate">
@@ -221,5 +241,23 @@
         <small>©️ 2020 Emoto Syoma</small>
     </footer>
 </body>
-
+<script>
+    var base = 940;
+    function updateMetaViewport(){
+        var viewportContent;
+        var w = window.width;
+        if(w<base){
+            viewportContent="width="+base+"px,user-scalable=no,shrink-to-fit=yes";
+        }
+        else {
+            viewportContent = "width=device-width,user-scalable=no,shrink-to-fit=yes";
+        }
+        document.querySelector("meta[name='viewport']").setAttribute("content", viewportContent);
+    }
+    window.addEventListener("resize", updateMetaViewport, false);
+    window.addEventListener("orientationchange", updateMetaViewport, false);
+    var ev = document.createEvent("UIEvent");
+    ev.initEvent("resize", true, true)
+    window.dispatchEvent(ev);
+</script>
 </html>
