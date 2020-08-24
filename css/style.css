@@ -149,7 +149,7 @@ appearance: none;
 #object p {
     position: absolute;
     padding-left: 10px;
-    font-family: 'American Typewriter,American';
+    font-family: 'American Typewriter','American';
     font-family: 'American Typewriter';
     font-size: 18px;
 }
@@ -163,7 +163,7 @@ appearance: none;
     display: none;
     /* background: #555; */
     width: 200px;
-    font-family: 'American Typewriter,American';
+    font-family: 'American Typewriter','American';
     font-size: 18px;
 }
 .object-inner ul li {
@@ -230,7 +230,7 @@ appearance: none;
     padding-bottom: 40px;
 }
 h1 {
-    font-family: 'American Typewriter,American';
+    font-family: 'American Typewriter','American';
     display: inline-block;
     /* font-family: 'Avenir Next'; */
 }
